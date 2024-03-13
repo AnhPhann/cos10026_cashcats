@@ -1,3 +1,11 @@
+/* 
+filename: style.css
+author: Anh Phan
+created: 12/3/2024
+last modified: 13/3/2024
+description: linked to index.html
+*/
+
 * {
     font-family: sans-serif;
     margin: 0;
@@ -5,17 +13,26 @@
 }
 
 body {
-    background-color: #ffe;
+    background-color: #FEF5ED;
     background-size: cover;
 }
 
+.banner {
+    background-color: #D3E4CD;
+    padding-top: 1px;
+    padding-right: 5em;
+}
+
 .nav-bar {
-    width: 85%;
-    margin: auto;
-    padding: 5% 0;
+    width: 100%;
+    padding: 0 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.logo {
+    margin-left: 10em;
 }
 
 .nav-bar ul li {
@@ -27,7 +44,7 @@ body {
 
 .nav-bar ul li a {
     text-decoration: none;
-    color: rgb(255, 0, 0);
+    color: black;
     text-transform: uppercase;
 }
 
@@ -44,4 +61,24 @@ body {
 
 .nav-bar ul li a:hover::after {
     width: 100%;
+}
+
+footer p {
+    display: inline-block;
+    width: 25%;
+    margin: 1em 5em 1em 5em;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer p:first-child {
+    float: left;
+}
+
+footer p:last-child {
+    float: right;
+    text-align: right;
 }
