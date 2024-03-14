@@ -63,6 +63,46 @@ body {
     width: 100%;
 }
 
+
+.job-box {
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* job description box */
+.job-description {
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 20px;
+    border: 2px solid #D3E4CD;
+    max-width: 850px;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: absolute;
+    top: 75px;
+    left: 20px;
+}
+
+.job-description h2 {
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.job-description p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #4b4949;
+    line-height: 1.5;
+}
+
+.second-job {
+    margin-top: 100px;
+}
+
 footer p {
     display: inline-block;
     width: 25%;
