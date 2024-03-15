@@ -74,7 +74,11 @@ body {
 /* details */
 .details img {
     width: 50%;
-    display: inline-block;
+}
+
+.details {
+    display: flex;
+    flex-direction: row;
 }
 /* end details */
 
