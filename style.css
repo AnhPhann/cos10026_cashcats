@@ -1,22 +1,28 @@
 /* 
 filename: style.css
-author: Anh Phan
+author: 
 created: 12/3/2024
-last modified: 13/3/2024
-description: linked to index.html
+last modified: 
+description: 
 */
 
+
+/* default css */
 * {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
 }
 
+
+/* body */
 body {
     background-color: #FEF5ED;
     background-size: cover;
 }
 
+
+/* nav bar */
 .banner {
     background-color: #D3E4CD;
     padding-top: 1px;
@@ -62,8 +68,18 @@ body {
 .nav-bar ul li a:hover::after {
     width: 100%;
 }
+/* end nav-bar */
 
 
+/* details */
+.details img {
+    width: 50%;
+    display: inline-block;
+}
+/* end details */
+
+
+/* job description box */
 .job-box {
     display: flex;
     height: 500px;
@@ -71,7 +87,6 @@ body {
     align-items: center;
 }
 
-/* job description box */
 .job-description {
     background-color: transparent;
     border-radius: 20px;
@@ -102,7 +117,10 @@ body {
 .second-job {
     margin-top: 100px;
 }
+/* end job description */
 
+
+/* footer */
 footer p {
     display: inline-block;
     width: 25%;
@@ -122,3 +140,4 @@ footer p:last-child {
     float: right;
     text-align: right;
 }
+/* end footer */
