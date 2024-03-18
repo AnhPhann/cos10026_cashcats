@@ -1,0 +1,450 @@
+/* 
+filename: style.css
+author: 
+created: 12/3/2024
+last modified: 
+description: 
+*/
+
+/* GLOBAL css */
+:root {
+    --poppy: #DA2C38;
+    --dark-green: #226F54;
+    --pistachio: #87C38F;
+    --lemon-chiffon: #F4F0BB;
+    --light-biatre: #653e2e;
+    --biatre: #43291F;
+}
+
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(186, 234, 186);
+}
+
+
+/* LOGO */
+.header-area .main-nav img {
+    height: 80px;
+    margin-left: 10vw;
+    margin-right: 1em;
+}
+
+.header-area .main-nav .logo {
+    line-height: 80px;
+    max-height: 80px;
+    color: #a6e5ce;
+    font-size: 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+    float: left;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+/* HEADER start */
+.header-area {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 100;
+  height: 80px;
+  background: rgba(250,250,250,0.2);
+}
+
+.header-area .main-nav {
+    min-height: 80px;
+    background: transparent;
+}
+
+.header-area .main-nav .nav {
+    list-style: none;
+    float: right;
+    margin-top: 21px;
+    margin-right: 10%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 999;
+}
+
+.header-area .main-nav .nav li {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.header-area .main-nav .nav li a {
+    display: block;
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--lemon-chiffon);
+    text-transform: uppercase;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+}
+
+.header-area .main-nav ul li a::after {
+    content: "";
+    height: 0.2em;
+    width: 100%;
+    background: var(--pistachio);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    opacity: 0;
+    transition: all 0.25s;
+}
+
+.header-area .main-nav ul li a:hover::after {
+    opacity: 1;
+}
+
+.header-area .main-nav ul li a.active:hover::after {
+    opacity: 0;
+}
+
+.header-area .nav li a.active {
+    color: rgb(255, 32, 32);
+}
+/* HEADER end */
+
+
+/* BANNER start */
+.main-banner {
+    position: relative;
+}
+
+#bg-video {
+    min-width: 100%;
+    min-height: 75vh;
+    max-width: 100%;
+    max-height: 75vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.video-overlay {
+    position: absolute;
+    background-color: rgba(45,67,89,0.8);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75vh;
+}
+
+.main-banner .caption {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%,50%);
+}
+.main-banner .caption h2 {
+    margin-top: 30px;
+    margin-bottom: 25px;
+    font-size: 88px;
+    text-transform: uppercase;
+    font-weight: 1000;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.main-banner .caption h2 em {
+    font-style: normal;
+    color: var(--pistachio);
+    font-weight: 900;
+}
+
+.main-button a {
+    display: inline-block;
+    font-size: 15px;
+    padding: 15px 25px;
+    background-color: var(--dark-green);
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all .5s;
+}
+  
+  .main-button a:hover {
+    background-color: var(--pistachio);
+    color: var(--biatre);
+}
+/* BANNER end */
+
+
+/* CONTENT start */
+.text-center {
+    text-align: center;
+}
+
+.main-content {
+    position: relative;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.main-content .head-content {
+    padding-bottom: 2em;
+}
+
+.main-content .head-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.main-content .head-content h2 em {
+    font-style: normal;
+    color: #215025;
+}
+
+.main-content img {
+    display: block;
+    width: 5em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5em;
+}
+
+.main-content .content-box {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 1em 0 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.main-content .content-box {
+    align-items: center;
+}
+
+.main-content .content-box p {
+    font-size: 1.25em;
+    text-align: center;
+    padding: .5em;
+}
+/* CONTENT start */
+
+
+/* FEATURE JOBS start */
+.jobs-section {
+    position: relative;
+    background-color: var(--pistachio);
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.jobs-section .section-heading h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--biatre);
+    padding-bottom: 1.25em;
+}
+
+.jobs-section .section-heading h2 em {
+    font-style: normal;
+    color: #215025;
+}
+
+.jobs-section .section-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.jobs-section .section-content .jobs-demo {
+    width: 35%;
+    background-color: #63d667;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+.jobs-section .section-content img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.section-content span {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--poppy);
+    letter-spacing: 0.5px;
+    margin-top: 25px;
+    margin-bottom: 18px;
+}
+
+.section-content h4 {
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--biatre);
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+
+.section-content p {
+    font-size: 20px;
+    color: var(--light-biatre);
+    margin-bottom: 18px;
+}
+
+ul.social-icons li {
+    margin-top: 10px;
+    display: inline-block;
+}
+
+ul.social-icons li a {
+    color: black;
+    font-size: 20px;
+    transition: all .3s;
+}
+  
+ul.social-icons li a:hover {
+    color: rgb(255, 50, 50);
+}
+/* FEATURE JOBS end */
+
+
+/* COUNTRY START */
+.country-section {
+    position: relative;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    display: flex;
+}
+
+.country-section .country-heading {
+    width: 45vw;
+    padding-right: 15px;
+}
+
+.country-section .country-heading h2 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+.country-section .country-heading h2 em {
+    font-style: normal;
+    color: #215025;
+}
+
+.country-section .country-heading p {
+    font-size: 16px;
+    line-height: 22px;
+    padding-bottom: 0.75em;
+}
+
+.country-section .country-content {
+    margin-bottom: 20px;
+}
+
+.country-section a {
+    color: rgb(165, 0, 0);
+    font-size: 16px;
+    transition: all .15s;
+}
+
+.country-section a:hover {
+    color: red;
+}
+
+.country-section .country-picture {
+    width: 35vw;
+    padding-left: 15px;
+}
+.country-picture img {
+    width: 100%;
+}
+
+/* job description box */
+.job-box {
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+.job-description {
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 20px;
+    border: 2px solid #D3E4CD;
+    max-width: 850px;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: absolute;
+    top: 75px;
+    left: 20px;
+}
+
+.job-description h2 {
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.job-description p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #4b4949;
+    line-height: 1.5;
+}
+
+.second-job {
+    margin-top: 100px;
+}
+/* end job description */
+
+
+/* FOOTER start */
+footer {
+    background-color: white;
+}
+
+footer p {
+    display: inline-block;
+    width: 25%;
+    margin: 1em 5em 1em 5em;
+}
+
+footer a {
+    color: black;
+}
+
+footer p:first-child {
+    float: left;
+}
+
+footer p:last-child {
+    float: right;
+    text-align: right;
+}
+/* FOOTER end */
