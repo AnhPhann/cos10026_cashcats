@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="app_style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Job Application</title>
   </head>
 
@@ -11,19 +12,31 @@
 
   <body>
 
-  <!-- nav_bar -->
+    <!-- HEADER -->
+    <header class="header-area">
+      <nav class="main-nav">
+          <a href="index.html" class="logo"><img src="./images/PixelCat.png" alt="CashCats Logo">CashCats</a>
+          <ul class="nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="jobs.html">Jobs</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="application.html"class="active">Contact</a></li> 
+          </ul>
+      </nav>
+  </header>
 
-    <div class="banner">
-        <div class="nav-bar">
-            <a href="http://swinburne.edu.au"><img src="Logo_of_Swinburne_University_of_Technology.svg_.jpg" class="logo" title="Swinburne" alt="Swinburne Logo"></a>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Job Details</a></li>
-                <li><a href="application.html">Application</a></li>
-                <li><a href="#">About us</a></li>
-            </ul>
-        </div>
+  <!-- NOT HOME BANNER -->
+  <div class="main-banner">
+      <img src="./images/header-bg.png" alt="" id="banner-bg">
+          
+      <div class="banner-overlay">
+          <div class="caption">
+              <h2><em>Application</em></h2>
+          </div>
       </div>
+  </div>
+
+
   <!-- form  -->
     <div class="container">
       <h1>Job Application Form</h1>
