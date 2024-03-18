@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app_style.css">
+    <title>Job Application</title>
+  </head>
+
+  <!-- body -->
+
+  <body>
+
+  <!-- nav_bar -->
+
+    <div class="banner">
+        <div class="nav-bar">
+            <a href="http://swinburne.edu.au"><img src="Logo_of_Swinburne_University_of_Technology.svg_.jpg" class="logo" title="Swinburne" alt="Swinburne Logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Job Details</a></li>
+                <li><a href="application.html">Application</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+        </div>
+      </div>
+  <!-- form  -->
+    <div class="container">
+      <h1>Job Application Form</h1>
+      <form action="/submit_application" method="POST" novalidate>
+          <label for="job_reference">Job Reference Number:</label><br>
+          <input type="text" id="job_reference" name="job_reference" pattern="[a-zA-Z0-9]{5}" required><br>
+
+          <label for="first_name">First Name:</label><br>
+          <input type="text" id="first_name" name="first_name" maxlength="20" required><br>
+
+          <label for="last_name">Last Name:</label><br>
+          <input type="text" id="last_name" name="last_name" maxlength="20" required><br>
+
+          <label for="dob">Date of Birth:</label><br>
+          <input type="date" id="dob" name="dob" required><br>
+
+          <fieldset>
+              <legend>Gender:</legend>
+              <label><input type="radio" name="gender" value="male" required> Male</label><br>
+              <label><input type="radio" name="gender" value="female"> Female</label><br>
+              <label><input type="radio" name="gender" value="other"> Other</label><br>
+          </fieldset>
+
+          <label for="street_address">Street Address:</label><br>
+          <input type="text" id="street_address" name="street_address" maxlength="40" required><br>
+
+          <label for="suburb">Suburb/Town:</label><br>
+          <input type="text" id="suburb" name="suburb" maxlength="40" required><br>
+
+          <label for="state">State:</label><br>
+          <select id="state" name="state" required>
+              <option value="">Select</option>
+              <option value="VIC">VIC</option>
+              <option value="NSW">NSW</option>
+              <option value="QLD">QLD</option>
+              <option value="NT">NT</option>
+              <option value="WA">WA</option>
+              <option value="SA">SA</option>
+              <option value="TAS">TAS</option>
+              <option value="ACT">ACT</option>
+          </select><br>
+
+          <label for="postcode">Postcode:</label><br>
+          <input type="text" id="postcode" name="postcode" pattern="[0-9]{4}" required><br>
+
+          <label for="email">Email Address:</label><br>
+          <input type="email" id="email" name="email" required><br>
+
+          <label for="phone">Phone Number:</label><br>
+          <input type="text" id="phone" name="phone" pattern="[0-9\s]{8,12}" required><br>
+
+          <label for="skills">Skills:</label><br>
+          <input type="checkbox" name="skills[]" value="communication" required> Communication<br>
+          <input type="checkbox" name="skills[]" value="teamwork" required> Teamwork<br>
+          <input type="checkbox" name="skills[]" value="problem_solving" required> Problem Solving<br>
+          <input type="checkbox" name="skills[]" value="other"> Other skills...<br>
+
+          <label for="other_skills">Other Skills:</label><br>
+          <textarea id="other_skills" name="other_skills" rows="4" cols="50"></textarea><br>
+
+          <input type="submit" value="Submit">
+      </form>
+    </div>
+
+
+  </body>
+</html>
