@@ -1,0 +1,124 @@
+/* body */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url(BGI1.png);
+      background-size: cover;
+      background-position: center;
+    }
+
+  /* application form */
+
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+textarea,
+select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 15px 0;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+textarea {
+    resize: vertical;
+}
+
+fieldset {
+    border: 0;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+        /* navigation-bar */
+
+        .banner {
+          background-color: #D3E4CD;
+          padding-top: 1px;
+          padding-right: 5em;
+      }
+      
+      .nav-bar {
+          width: 100%;
+          padding: 0;
+          margin: 0;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+      }
+      
+      .logo {
+          margin-left: 1em;
+          width: 210px;
+          height: 120px;
+
+      }
+      
+      .nav-bar ul li {
+          list-style: none;
+          display: inline-block;
+          margin: 0 20px;
+          position: relative;
+      }
+      
+      .nav-bar ul li a {
+          text-decoration: none;
+          color: black;
+          text-transform: uppercase;
+      }
+      
+      .nav-bar ul li a::after {
+          content: "";
+          height: 0.2em;
+          width: 0;
+          background: #f00;
+          position: absolute;
+          left: 0;
+          bottom: -10px;
+          transition: 0.25s;
+      }
+      
+      .nav-bar ul li a:hover::after {
+          width: 100%;
+      }
+     
