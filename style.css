@@ -421,6 +421,7 @@ ul.social-icons li a:hover {
 }
 
 .job-description {
+    position: relative;
     border-radius: 20px;
     padding: 20px;
     border: 2px solid #D3E4CD;
@@ -430,16 +431,35 @@ ul.social-icons li a:hover {
 }
 
 .job-description h2 {
-    font-size: 25px;
+    font-size: 35px;
     color: #000000;
     margin-bottom: 10px;
 }
 
+.job-description h3 {
+    font-size: 30px;
+    color: #000000;
+    margin-bottom: 5px;
+    margin-top: 50px;
+}
+
 .job-description p {
-    font-size: 16px;
+    font-size: 25px;
     font-weight: bold;
     color: var(--biatre);
     line-height: 1.5;
+}
+
+.job-description p2 {
+    font-size: 20px;
+    color: black;
+    line-height: 1;
+}
+
+.job-description p3 {
+    font-size: 15px;
+    color: black;
+    line-height: 0.75;
 }
 
 .second-job {
@@ -447,6 +467,60 @@ ul.social-icons li a:hover {
 }
 /* JOB DESCRIPTION end */
 
+/*  WEBDEV DESCRIPTION start */
+
+#jbox {
+    display: none;
+}   
+
+#jbox:checked ~ .job-content { /* DISPLAY SHOWLESS + READMORE */
+    display: block;
+}
+
+#jbox:checked ~ label { /* HIDES READMORE/SHOWLESS AND SHOWS READMORE/SHOWLESS BUTTON */
+    display: none;
+}
+
+.job-content {
+    display: none;
+}
+
+/* WEBDEV DESCRIPTION end */
+
+/* SYSANALYST DESCRIPTION start */
+
+#jbox-analyst {
+    display: none;
+}
+
+#jbox-analyst:checked ~ .job-content-analyst { 
+    display: block;
+}
+
+#jbox-analyst:checked ~ label { 
+    display: none;
+}
+
+.job-content-analyst {
+    display: none;
+}
+
+/* READMORE SHOWLESS SYSANALYST end */
+
+label {
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+    background-color: var(--dark-green);
+    padding: 5px 13px;
+    border-radius: 3px;
+    margin-top: 12px;
+    position: absolute;
+    right: 30px;
+    top: 15px; 
+    text-transform: uppercase;
+    transition: all .5s ease-out;
+}
 
 
 /* APPLICATION start */
