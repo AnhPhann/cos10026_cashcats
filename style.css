@@ -30,7 +30,7 @@ a {
 }
 
 body {
-    background-color: rgb(186, 234, 186);
+    background-color: rgb(230,230,250);
 }
 
 
@@ -44,7 +44,7 @@ body {
 .header-area .main-nav .logo {
     line-height: 80px;
     max-height: 80px;
-    color: #a6e5ce;
+    color: rgb(221,160,221);
     font-size: 30px;
     font-weight: 800;
     text-transform: uppercase;
@@ -56,18 +56,30 @@ body {
 
 /* HEADER start */
 .header-area {
-  position: absolute;
+  z-index: 100;
+  height: 80px;
+  background: rgba(250, 250, 250, 0.99);
+  height: 80px;
+  position: sticky;
   top: 0px;
   left: 0px;
   right: 0px;
-  z-index: 100;
-  height: 80px;
-  background: rgba(250,250,250,0.2);
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.15);
+  
 }
 
 .header-area .main-nav {
     min-height: 80px;
     background: transparent;
+}
+
+.header-area .main-nav::before {
+    content: "";
+    background-color: #b9a5e2;
+    height: 0.2em;
+    width: 100%;
+    position: absolute;
+    left: 0;
 }
 
 .header-area .main-nav .nav {
@@ -91,7 +103,7 @@ body {
     display: block;
     font-weight: 600;
     font-size: 15px;
-    color: var(--lemon-chiffon);
+    color: #020005;
     text-transform: uppercase;
     height: 40px;
     line-height: 40px;
@@ -102,7 +114,7 @@ body {
     content: "";
     height: 0.2em;
     width: 100%;
-    background: var(--pistachio);
+    background: #c3b1e1;
     position: absolute;
     left: 0;
     bottom: -5px;
@@ -119,7 +131,7 @@ body {
 }
 
 .header-area .nav li a.active {
-    color: rgb(255, 32, 32);
+    color: red;
 }
 /* HEADER end */
 
@@ -158,7 +170,7 @@ body {
 .main-banner .caption h2 {
     margin-top: 30px;
     margin-bottom: 25px;
-    font-size: 88px;
+    font-size: 66px;
     text-transform: uppercase;
     font-weight: 1000;
     color: #fff;
@@ -167,7 +179,7 @@ body {
 
 .main-banner .caption h2 em {
     font-style: normal;
-    color: var(--pistachio);
+    color: #b9a5e2;
     font-weight: 900;
 }
 
@@ -175,16 +187,17 @@ body {
     display: inline-block;
     font-size: 15px;
     padding: 15px 25px;
-    background-color: var(--dark-green);
+    background-color: #a17ddb;
     color: #fff;
     text-align: center;
     font-weight: 500;
     text-transform: uppercase;
     transition: all .5s;
+    letter-spacing: 2px;
 }
   
   .main-button a:hover {
-    background-color: var(--pistachio);
+    background-color: #b9a5e2;
     color: var(--biatre);
 }
 /* BANNER end */
@@ -193,9 +206,9 @@ body {
 /* NOT HOME BANNER start */
 #banner-bg {
     min-width: 100%;
-    min-height: 35vh;
+    min-height: 45vh;
     max-width: 100%;
-    max-height: 35vh;
+    max-height: 45vh;
     object-fit: cover;
     z-index: -1;
 }
@@ -206,7 +219,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 35vh;
+    height: 45vh;
 }
 /* NOT HOME BANNER end */
 
@@ -272,7 +285,7 @@ body {
 /* FEATURE JOBS start */
 .jobs-section {
     position: relative;
-    background-color: var(--pistachio);
+    background-color: #c3b1e1;
     padding-top: 2em;
     padding-bottom: 2em;
 }
@@ -299,9 +312,9 @@ body {
 
 .jobs-section .section-content .jobs-demo {
     width: 35%;
-    background-color: #63d667;
+    background-color: #b9a5e2;
     border-radius: 5px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
     padding: 15px;
     margin-bottom: 30px;
 }
@@ -467,8 +480,8 @@ ul.social-icons li a:hover {
 }
 /* JOB DESCRIPTION end */
 
-/*  WEBDEV DESCRIPTION start */
 
+/*  WEBDEV DESCRIPTION start */
 #jbox {
     display: none;
 }   
@@ -484,8 +497,8 @@ ul.social-icons li a:hover {
 .job-content {
     display: none;
 }
-
 /* WEBDEV DESCRIPTION end */
+
 
 /* SYSANALYST DESCRIPTION start */
 
