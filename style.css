@@ -444,13 +444,13 @@ ul.social-icons li a:hover {
 }
 
 .job-description h2 {
-    font-size: 35px;
+    font-size: 32px;
     color: #000000;
     margin-bottom: 10px;
 }
 
 .job-description h3 {
-    font-size: 30px;
+    font-size: 28px;
     color: #000000;
     margin-bottom: 5px;
     margin-top: 50px;
@@ -531,8 +531,6 @@ label {
     position: absolute;
     right: 30px;
     top: 15px; 
-    text-transform: uppercase;
-    transition: all .5s ease-out;
 }
 
 
